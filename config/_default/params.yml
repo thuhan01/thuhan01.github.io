@@ -30,9 +30,9 @@ monthFormat: "2006-01"
 dateFormat: "2006-01-02"
 timeFormat: "2006-01-02 15:04:05"
 
-author: D-Sketon
-email: xxx@example.com
-description: "少女祈祷中..."
+author: Akabane Karma
+email: thithuhannguyen1@gmail.com
+description: "Age: 18 · University of Information Technology (UIT) · Vietnam"
 # subtitle: "少女祈祷中..."
 subtitle:
   typing:
@@ -51,9 +51,9 @@ subtitle:
     showCursor: true            # 是否显示闪烁的字符
     cursorChar: "|"             # 字符
     smartBackspace: false       # 智能退格，只删除不同的部分
-  text: "少女祈祷中..."        # 当 typing.enable = false 时使用
+  text: "Welcome to my blog"        # 当 typing.enable = false 时使用
 
-banner: "images/banner.webp"
+banner: "https://i.pinimg.com/736x/72/df/4e/72df4e3422a48f16d772dc39a1780dd5.jpg"
 # You can also write it in the form of the following url
 # banner: "https://example.com"
 
@@ -68,7 +68,7 @@ banner_srcset:
     - src: "images/banner.webp"
       media: "(min-width: 800px)"
 
-avatar: "avatar.webp"
+avatar: "https://i.pinimg.com/1200x/f0/b6/b0/f0b6b00f7cf0b297eb6fe947376d853e.jpg"
 
 # Control the display of the post cover
 # If not set, the banner image will be displayed by default
@@ -111,7 +111,7 @@ footer:
   count: true
   busuanzi: true
   icon:
-    url: "../images/taichi.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    url: "https://i.pinimg.com/736x/58/b7/0a/58b70ae9e51a45fcca622cce1bb03f64.jpg" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
     rotate: true
     mask: true # whether to use the images as a mask
 
