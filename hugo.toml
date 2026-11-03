@@ -1,6 +1,6 @@
 baseURL = 'https://thuhan01.github.io/'
 languageCode = 'vi'
-title = 'Karma Blog'
+title = "Han's Blog"
 theme = 'hugo-theme-reimu'
 
 defaultContentLanguage = 'vi'
