@@ -653,7 +653,7 @@ home_categories:
 # Make sure your code snippet is safeHTML
 injector:
   head_begin: # Inject code snippet right after <head>
-  head_end: '<style>#nav-rss-link{display:none!important}:root{--cursor-default:url("/images/karma-akabane-cursor-portrait.png") 40 16,auto;--cursor-pointer:url("/images/karma-akabane-cursor-gun.png") 32 16,pointer}.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played,.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{background:var(--red-2)!important}.aplayer .aplayer-list ol li.aplayer-list-light{background:var(--red-4)!important}</style>' # hide RSS, use Karma cursor, match music player to site colors
+  head_end: '<style>#nav-rss-link{display:none!important}:root{--cursor-default:url("/images/karma-akabane-cursor-portrait.png") 40 16,auto;--cursor-pointer:url("/images/karma-akabane-cursor-gun.png") 32 16,pointer}.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played,.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{background:var(--red-2)!important}.aplayer .aplayer-list ol li.aplayer-list-light{background:var(--red-4)!important}</style><link rel="icon" type="image/x-icon" href="/favicon.ico?v=98c62ff2">' # hide RSS, use Karma cursor, match music player to site colors
   body_begin: # Inject code snippet right after <body>
   body_end: # Inject code snippet right before </body>
   sidebar_begin:
