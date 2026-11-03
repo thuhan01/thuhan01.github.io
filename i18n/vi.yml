@@ -2,3 +2,7 @@ home: Home
 archives: Archives
 about: About
 friend: Friend
+sidebar:
+  post: Posts
+  category: Categories
+  tag: Tags
