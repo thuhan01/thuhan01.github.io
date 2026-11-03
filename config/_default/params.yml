@@ -7,16 +7,16 @@
 menu:
   - name: home
     url: ""
-    icon: # default use taichi icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1'
+    icon: f015 # house
   - name: archives
     url: "archives"
-    icon:
+    icon: f187 # archive box
   - name: about
     url: "about"
-    icon:
+    icon: f2bd # friendly profile
   - name: friend
     url: "friend"
-    icon:
+    icon: f004 # heart
 
 # friend links
 friends:
@@ -653,7 +653,7 @@ home_categories:
 # Make sure your code snippet is safeHTML
 injector:
   head_begin: # Inject code snippet right after <head>
-  head_end: # Inject code snippet right before </head>
+  head_end: '<style>#nav-rss-link { display: none !important; }</style>' # hide the RSS button
   body_begin: # Inject code snippet right after <body>
   body_end: # Inject code snippet right before </body>
   sidebar_begin: # Inject code snippet right after <aside>
