@@ -705,7 +705,7 @@ player:
     enable: true
     options:
       audio: []
-      fixed: true
+      fixed: false
       autoplay:
       loop:
       order:
