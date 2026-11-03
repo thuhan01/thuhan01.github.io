@@ -1,9 +1,9 @@
 baseURL = 'https://thuhan01.github.io/'
-languageCode = 'en'
+languageCode = 'vi'
 title = 'Karma Blog'
 theme = 'hugo-theme-reimu'
 
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'vi'
 [languages]
 [languages.vi]
   languageName = 'Tiếng Việt'
@@ -19,3 +19,7 @@ guessSyntax = true
 noClasses = false
 
 home = ["HTML", "RSS"]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
