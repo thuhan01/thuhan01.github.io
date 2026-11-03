@@ -7,16 +7,16 @@
 menu:
   - name: home
     url: ""
-    icon: images/karma-akabane-chibi.png
+    icon: "https://i.pinimg.com/736x/b4/bf/2c/b4bf2cc414b3ff63c09c8982f8b2b31a.jpg"
   - name: archives
     url: "archives"
-    icon: images/karma-akabane-chibi.png
+    icon: "https://i.pinimg.com/736x/b4/bf/2c/b4bf2cc414b3ff63c09c8982f8b2b31a.jpg"
   - name: about
     url: "about"
-    icon: images/karma-akabane-chibi.png
+    icon: "https://i.pinimg.com/736x/b4/bf/2c/b4bf2cc414b3ff63c09c8982f8b2b31a.jpg"
   - name: friend
     url: "friend"
-    icon: images/karma-akabane-chibi.png
+    icon: "https://i.pinimg.com/736x/b4/bf/2c/b4bf2cc414b3ff63c09c8982f8b2b31a.jpg"
 
 # friend links
 friends:
