@@ -7,16 +7,16 @@
 menu:
   - name: home
     url: ""
-    icon: "images/karma-akabane-menu-transparent.png"
+    icon: "images/karma-akabane-cursor.png"
   - name: archives
     url: "archives"
-    icon: "images/karma-akabane-menu-transparent.png"
+    icon: "images/karma-akabane-cursor.png"
   - name: about
     url: "about"
-    icon: "images/karma-akabane-menu-transparent.png"
+    icon: "images/karma-akabane-cursor.png"
   - name: friend
     url: "friend"
-    icon: "images/karma-akabane-menu-transparent.png"
+    icon: "images/karma-akabane-cursor.png"
 
 # friend links
 friends:
@@ -219,8 +219,8 @@ anchor_icon: # default use '#' icon, you can use a hexadecimal representation of
 reimu_cursor:
   enable: true
   cursor:
-    default: ../images/cursor/reimu-cursor-default.png  # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
-    pointer: ../images/cursor/reimu-cursor-pointer.png
+    default: ../images/karma-akabane-cursor.png
+    pointer: ../images/karma-akabane-cursor.png
     text: ../images/cursor/reimu-cursor-text.png
 
 icon_font: 4552607_ex15nbittbh
@@ -653,7 +653,7 @@ home_categories:
 # Make sure your code snippet is safeHTML
 injector:
   head_begin: # Inject code snippet right after <head>
-  head_end: '<style>#nav-rss-link{display:none!important}</style>' # hide the RSS button
+  head_end: '<style>#nav-rss-link{display:none!important}:root{--cursor-default:url("/images/karma-akabane-cursor.png") 24 24,auto;--cursor-pointer:url("/images/karma-akabane-cursor.png") 24 24,pointer}</style>' # hide RSS and use Karma as the site cursor
   body_begin: # Inject code snippet right after <body>
   body_end: # Inject code snippet right before </body>
   sidebar_begin: # Inject code snippet right after <aside>
