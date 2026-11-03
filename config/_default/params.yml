@@ -7,16 +7,16 @@
 menu:
   - name: home
     url: ""
-    icon: "https://i.pinimg.com/736x/b4/bf/2c/b4bf2cc414b3ff63c09c8982f8b2b31a.jpg"
+    icon: "images/karma-akabane-menu-transparent.png"
   - name: archives
     url: "archives"
-    icon: "https://i.pinimg.com/736x/b4/bf/2c/b4bf2cc414b3ff63c09c8982f8b2b31a.jpg"
+    icon: "images/karma-akabane-menu-transparent.png"
   - name: about
     url: "about"
-    icon: "https://i.pinimg.com/736x/b4/bf/2c/b4bf2cc414b3ff63c09c8982f8b2b31a.jpg"
+    icon: "images/karma-akabane-menu-transparent.png"
   - name: friend
     url: "friend"
-    icon: "https://i.pinimg.com/736x/b4/bf/2c/b4bf2cc414b3ff63c09c8982f8b2b31a.jpg"
+    icon: "images/karma-akabane-menu-transparent.png"
 
 # friend links
 friends:
