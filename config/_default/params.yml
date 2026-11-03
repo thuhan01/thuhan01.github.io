@@ -219,8 +219,8 @@ anchor_icon: # default use '#' icon, you can use a hexadecimal representation of
 reimu_cursor:
   enable: true
   cursor:
-    default: ../images/karma-akabane-cursor.png
-    pointer: ../images/karma-akabane-cursor.png
+    default: ../images/karma-akabane-cursor-portrait.png
+    pointer: ../images/karma-akabane-cursor-portrait.png
     text: ../images/cursor/reimu-cursor-text.png
 
 icon_font: 4552607_ex15nbittbh
@@ -653,7 +653,7 @@ home_categories:
 # Make sure your code snippet is safeHTML
 injector:
   head_begin: # Inject code snippet right after <head>
-  head_end: '<style>#nav-rss-link{display:none!important}:root{--cursor-default:url("/images/karma-akabane-cursor.png") 24 24,auto;--cursor-pointer:url("/images/karma-akabane-cursor.png") 24 24,pointer}</style>' # hide RSS and use Karma as the site cursor
+  head_end: '<style>#nav-rss-link{display:none!important}:root{--cursor-default:url("/images/karma-akabane-cursor-portrait.png") 40 16,auto;--cursor-pointer:url("/images/karma-akabane-cursor-portrait.png") 40 16,pointer}</style>' # hide RSS and use Karma as the site cursor
   body_begin: # Inject code snippet right after <body>
   body_end: # Inject code snippet right before </body>
   sidebar_begin: # Inject code snippet right after <aside>
