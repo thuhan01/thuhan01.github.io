@@ -653,10 +653,14 @@ home_categories:
 # Make sure your code snippet is safeHTML
 injector:
   head_begin: # Inject code snippet right after <head>
-  head_end: '<style>#nav-rss-link{display:none!important}:root{--cursor-default:url("/images/karma-akabane-cursor-portrait.png") 40 16,auto;--cursor-pointer:url("/images/karma-akabane-cursor-portrait.png") 40 16,pointer}</style>' # hide RSS and use Karma as the site cursor
+  head_end: '<style>#nav-rss-link{display:none!important}:root{--cursor-default:url("/images/karma-akabane-cursor-portrait.png") 40 16,auto;--cursor-pointer:url("/images/karma-akabane-cursor-portrait.png") 40 16,pointer}.sidebar-youtube-music{box-sizing:border-box;margin:0 0 40px;background:var(--color-wrap);border:1px solid var(--red-4);border-radius:10px;box-shadow:var(--shadow-card);overflow:hidden}.sidebar-youtube-music__heading{display:block;padding:10px 14px;color:var(--color-link);font-weight:700;text-decoration:none}.sidebar-youtube-music__heading:hover{color:var(--red-1)}.sidebar-youtube-music iframe{display:block;width:100%;height:210px;border:0}</style>' # hide RSS and use Karma as the site cursor
   body_begin: # Inject code snippet right after <body>
   body_end: # Inject code snippet right before </body>
-  sidebar_begin: # Inject code snippet right after <aside>
+  sidebar_begin: |-
+    <section class="sidebar-youtube-music" aria-label="Nhạc trên YouTube">
+      <a class="sidebar-youtube-music__heading" href="https://www.youtube.com/playlist?list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer">♫ Nhạc của tôi</a>
+      <iframe src="https://www.youtube.com/embed?listType=playlist&amp;list=PLBlSIRBvrTWU" title="Playlist for Github" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
   sidebar_end: # Inject code snippet right before </aside>
 
 # Experimental, may have a lot of bugs, open with caution!
@@ -702,7 +706,7 @@ player:
   # if you enable meting, you must enable aplayer first
   aplayer:
     # https://github.com/DIYgod/APlayer
-    enable: true
+    enable: false
     options:
       audio: []
       fixed: false
@@ -717,7 +721,7 @@ player:
   meting:
     # https://github.com/metowolf/MetingJS
     # if you want to use meting, please enable aplayer first
-    enable: true
+    enable: false
     meting_api: # custom api
     options:
       id: 2265921590
