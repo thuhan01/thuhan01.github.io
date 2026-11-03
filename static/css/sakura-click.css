@@ -1,0 +1,30 @@
+.sakura-click-petal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: var(--petal-width);
+  height: var(--petal-height);
+  z-index: 99999;
+  pointer-events: none;
+  will-change: transform, opacity;
+  transform-origin: 50% 75%;
+  border-radius: 80% 8% 78% 12%;
+  background: linear-gradient(145deg, #fff8fb 5%, #ffd2e3 42%, #f49abb 82%, #e879a4 100%);
+  box-shadow: inset 1px 1px 1px #fff9, 0 2px 5px #b64d7526;
+}
+
+.sakura-click-petal::after {
+  content: "";
+  position: absolute;
+  left: 47%;
+  top: 31%;
+  width: 1px;
+  height: 48%;
+  border-radius: 50%;
+  background: #d870994a;
+  transform: rotate(25deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sakura-click-petal { display: none; }
+}
