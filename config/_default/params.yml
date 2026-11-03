@@ -653,33 +653,15 @@ home_categories:
 # Make sure your code snippet is safeHTML
 injector:
   head_begin: # Inject code snippet right after <head>
-  head_end: '<style>#nav-rss-link{display:none!important}:root{--cursor-default:url("/images/karma-akabane-cursor-portrait.png") 40 16,auto;--cursor-pointer:url("/images/karma-akabane-cursor-portrait.png") 40 16,pointer}.sidebar-youtube-music{box-sizing:border-box;margin:0 0 40px;background:var(--color-wrap);border:1px solid var(--red-4);border-radius:10px;box-shadow:var(--shadow-card);overflow:hidden}.sidebar-youtube-music__mini{display:flex;align-items:center;gap:10px;padding:12px}.sidebar-youtube-music__cover img{display:block;width:48px;height:48px;object-fit:cover;border-radius:6px}.sidebar-youtube-music__info{flex:1;min-width:0}.sidebar-youtube-music__info strong{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:var(--color-link);font-size:14px}.sidebar-youtube-music__info span{display:block;color:var(--grey-7);font-size:12px}.sidebar-youtube-music__play{display:grid;place-items:center;flex:0 0 32px;width:32px;height:32px;border-radius:50%;background:var(--red-2);color:white;text-decoration:none}.sidebar-youtube-music__play:hover{background:var(--red-1)}.sidebar-youtube-music__list{list-style:none;margin:0;padding:0;max-height:280px;overflow-y:auto}.sidebar-youtube-music__list li{margin:0;padding:0}.sidebar-youtube-music__song{display:flex;align-items:center;gap:8px;padding:8px 12px;border-top:1px solid var(--color-h2-border);color:var(--color-link);font-size:12px;line-height:1.4;text-decoration:none}.sidebar-youtube-music__song:hover{background:var(--color-hover-shadow)}.sidebar-youtube-music__song-play{flex:0 0 16px;color:var(--red-2)}.sidebar-youtube-music__song-title{flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.sidebar-youtube-music__duration{flex:0 0 auto;color:var(--grey-7);font-size:11px}.sidebar-youtube-music__footer{display:block;padding:9px 12px;border-top:1px solid var(--color-h2-border);color:var(--red-2);font-size:12px;text-align:center;text-decoration:none}.sidebar-youtube-music__footer:hover{color:var(--red-1)}</style>' # hide RSS and use Karma as the site cursor
+  head_end: '<style>#nav-rss-link{display:none!important}:root{--cursor-default:url("/images/karma-akabane-cursor-portrait.png") 40 16,auto;--cursor-pointer:url("/images/karma-akabane-cursor-portrait.png") 40 16,pointer}.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played,.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{background:var(--red-2)!important}.aplayer .aplayer-list ol li.aplayer-list-light{background:var(--red-4)!important}</style>' # hide RSS, use Karma cursor, match music player to site colors
   body_begin: # Inject code snippet right after <body>
   body_end: # Inject code snippet right before </body>
-  sidebar_begin: |-
-    <section class="sidebar-youtube-music" aria-label="Danh sách nhạc YouTube">
-      <div class="sidebar-youtube-music__mini">
-        <a class="sidebar-youtube-music__cover" href="https://www.youtube.com/watch?v=YaykGT215b4&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" aria-label="Mở bài đầu tiên trên YouTube"><img src="https://i.ytimg.com/vi/YaykGT215b4/mqdefault.jpg" alt="" loading="lazy"></a>
-        <div class="sidebar-youtube-music__info"><strong>Nhạc của tôi</strong><span>8 bài · YouTube</span></div>
-        <a class="sidebar-youtube-music__play" href="https://www.youtube.com/watch?v=YaykGT215b4&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" aria-label="Phát bài đầu tiên trên YouTube">▶</a>
-      </div>
-      <ol class="sidebar-youtube-music__list">
-    <li><a class="sidebar-youtube-music__song" href="https://www.youtube.com/watch?v=YaykGT215b4&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" title="Mở Tùng TeA - Già Cùng Nhau Là Được ft. PC ( Prod. VoVanDuc. ) | Official MV trên YouTube"><span class="sidebar-youtube-music__song-play">▶</span><span class="sidebar-youtube-music__song-title">Tùng TeA - Già Cùng Nhau Là Được ft. PC ( Prod. VoVanDuc. ) | Official MV</span><span class="sidebar-youtube-music__duration">3:55</span></a></li>
-    <li><a class="sidebar-youtube-music__song" href="https://www.youtube.com/watch?v=L6vafP1f6R8&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" title="Mở Sao Mình Chưa Nắm Tay Nhau (Drill Chuẩn TikTok) - Yan Nguyễn | Rồi Mùa Yêu Thương Dần Đang Đến trên YouTube"><span class="sidebar-youtube-music__song-play">▶</span><span class="sidebar-youtube-music__song-title">Sao Mình Chưa Nắm Tay Nhau (Drill Chuẩn TikTok) - Yan Nguyễn | Rồi Mùa Yêu Thương Dần Đang Đến</span><span class="sidebar-youtube-music__duration">3:07</span></a></li>
-    <li><a class="sidebar-youtube-music__song" href="https://www.youtube.com/watch?v=od34u5Q6msU&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" title="Mở Siêu Cô Đơn Drill (Bản Hot TikTok) - Quanh Mình Quạnh Hiu Nhưng Khi Drill TikTok🎶Nhạc Drill Hay 2026 trên YouTube"><span class="sidebar-youtube-music__song-play">▶</span><span class="sidebar-youtube-music__song-title">Siêu Cô Đơn Drill (Bản Hot TikTok) - Quanh Mình Quạnh Hiu Nhưng Khi Drill TikTok🎶Nhạc Drill Hay 2026</span><span class="sidebar-youtube-music__duration">3:05</span></a></li>
-    <li><a class="sidebar-youtube-music__song" href="https://www.youtube.com/watch?v=3AtDnEC4zak&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" title="Mở Charlie Puth - We Don&#39;t Talk Anymore (feat. Selena Gomez) [Official Video] trên YouTube"><span class="sidebar-youtube-music__song-play">▶</span><span class="sidebar-youtube-music__song-title">Charlie Puth - We Don&#39;t Talk Anymore (feat. Selena Gomez) [Official Video]</span><span class="sidebar-youtube-music__duration">3:51</span></a></li>
-    <li><a class="sidebar-youtube-music__song" href="https://www.youtube.com/watch?v=nfs8NYg7yQM&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" title="Mở Charlie Puth - Attention [Official Video] trên YouTube"><span class="sidebar-youtube-music__song-play">▶</span><span class="sidebar-youtube-music__song-title">Charlie Puth - Attention [Official Video]</span><span class="sidebar-youtube-music__duration">3:52</span></a></li>
-    <li><a class="sidebar-youtube-music__song" href="https://www.youtube.com/watch?v=GCDL0yDpNyo&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" title="Mở Khiên Ti Hí Remix | 牵丝戏 - Dj版 | 刘汉成 | Nhạc Tiktok Douyin Trung Quốc Hay Nhất trên YouTube"><span class="sidebar-youtube-music__song-play">▶</span><span class="sidebar-youtube-music__song-title">Khiên Ti Hí Remix | 牵丝戏 - Dj版 | 刘汉成 | Nhạc Tiktok Douyin Trung Quốc Hay Nhất</span><span class="sidebar-youtube-music__duration">3:01</span></a></li>
-    <li><a class="sidebar-youtube-music__song" href="https://www.youtube.com/watch?v=KDRJbPTLKnA&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" title="Mở 阿YueYue、戾格 - 沈园外 (抖音DJ版) Thẩm Viên Ngoại (Remix) - A YueYue、Lệ Cách『在池台的正中，像当初的怀中，隔太多春秋会不能相拥』抖音 trên YouTube"><span class="sidebar-youtube-music__song-play">▶</span><span class="sidebar-youtube-music__song-title">阿YueYue、戾格 - 沈园外 (抖音DJ版) Thẩm Viên Ngoại (Remix) - A YueYue、Lệ Cách『在池台的正中，像当初的怀中，隔太多春秋会不能相拥』抖音</span><span class="sidebar-youtube-music__duration">5:44</span></a></li>
-    <li><a class="sidebar-youtube-music__song" href="https://www.youtube.com/watch?v=Gc4LUVm7Wvk&amp;list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer" title="Mở [Vietsub] Ta Tên Trường An, Chàng Tên Cố Lý - Doãn Tích Miên/ Tiểu Điền Âm Nhạc Xã | 我叫长安,你叫故里 trên YouTube"><span class="sidebar-youtube-music__song-play">▶</span><span class="sidebar-youtube-music__song-title">[Vietsub] Ta Tên Trường An, Chàng Tên Cố Lý - Doãn Tích Miên/ Tiểu Điền Âm Nhạc Xã | 我叫长安,你叫故里</span><span class="sidebar-youtube-music__duration">3:33</span></a></li>
-      </ol>
-      <a class="sidebar-youtube-music__footer" href="https://www.youtube.com/playlist?list=PLBlSIRBvrTWU" target="_blank" rel="noopener noreferrer">Mở cả playlist trên YouTube ↗</a>
-    </section>
+  sidebar_begin:
   sidebar_end: # Inject code snippet right before </aside>
 
 # Experimental, may have a lot of bugs, open with caution!
 pjax:
-  enable: false
+  enable: true
 
 # Experimental
 # https://github.com/GoogleChromeLabs/quicklink
@@ -716,33 +698,61 @@ pace:
 # Please turn on pjax to use this feature
 player:
   disable_on_mobile: false
-  position: before_sidebar # before_sidebar | after_sidebar | after_widget
-  # if you enable meting, you must enable aplayer first
+  position: before_sidebar
   aplayer:
-    # https://github.com/DIYgod/APlayer
-    enable: false
+    enable: true
     options:
-      audio: []
+      audio:
+        - name: "Già Cùng Nhau Là Được"
+          artist: "Tùng TeA ft. PC"
+          url: "/music/YaykGT215b4.m4a"
+          cover: "https://i.ytimg.com/vi/YaykGT215b4/mqdefault.jpg"
+        - name: "Sao Mình Chưa Nắm Tay Nhau (Drill)"
+          artist: "Yan Nguyễn"
+          url: "/music/L6vafP1f6R8.m4a"
+          cover: "https://i.ytimg.com/vi/L6vafP1f6R8/mqdefault.jpg"
+        - name: "Siêu Cô Đơn (Drill)"
+          artist: "Nhạc Drill"
+          url: "/music/od34u5Q6msU.m4a"
+          cover: "https://i.ytimg.com/vi/od34u5Q6msU/mqdefault.jpg"
+        - name: "We Don’t Talk Anymore"
+          artist: "Charlie Puth ft. Selena Gomez"
+          url: "/music/3AtDnEC4zak.m4a"
+          cover: "https://i.ytimg.com/vi/3AtDnEC4zak/mqdefault.jpg"
+        - name: "Attention"
+          artist: "Charlie Puth"
+          url: "/music/nfs8NYg7yQM.m4a"
+          cover: "https://i.ytimg.com/vi/nfs8NYg7yQM/mqdefault.jpg"
+        - name: "Khiên Ti Hí (Remix)"
+          artist: "Lưu Hán Thành"
+          url: "/music/GCDL0yDpNyo.m4a"
+          cover: "https://i.ytimg.com/vi/GCDL0yDpNyo/mqdefault.jpg"
+        - name: "Thẩm Viên Ngoại (Remix)"
+          artist: "A YueYue, Lệ Cách"
+          url: "/music/KDRJbPTLKnA.m4a"
+          cover: "https://i.ytimg.com/vi/KDRJbPTLKnA/mqdefault.jpg"
+        - name: "Ta Tên Trường An, Chàng Tên Cố Lý"
+          artist: "Doãn Tích Miên"
+          url: "/music/Gc4LUVm7Wvk.m4a"
+          cover: "https://i.ytimg.com/vi/Gc4LUVm7Wvk/mqdefault.jpg"
       fixed: false
-      autoplay:
-      loop:
-      order:
-      preload:
-      volume:
-      mutex:
-      listFolded:
-      lrcType:
+      autoplay: false
+      loop: "all"
+      order: "list"
+      preload: "metadata"
+      volume: 0.7
+      mutex: true
+      listFolded: false
+      lrcType: 0
+      theme: "#f49797"
   meting:
-    # https://github.com/metowolf/MetingJS
-    # if you want to use meting, please enable aplayer first
     enable: false
-    meting_api: # custom api
+    meting_api:
     options:
-      id: 2265921590
+      id:
       server: netease
       type: playlist
       auto:
-
 ########################################
 # pangu.js
 ########################################
