@@ -68,7 +68,7 @@ banner_srcset:
     - src: "images/banner.webp"
       media: "(min-width: 800px)"
 
-avatar: "https://i.pinimg.com/736x/89/6b/c8/896bc8384b09c1e4cf6982f767f5bd61.jpg"
+avatar: "karma-avatar-896bc838.jpg"
 
 # Control the display of the post cover
 # If not set, the banner image will be displayed by default
