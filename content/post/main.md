@@ -4,9 +4,6 @@ description: 测试 Markdown 基本元素
 
 date: 2022-06-09T20:12:52+08:00
 lastmod: 2022-06-09T20:12:52+08:00
-tags:
-  - markdown
-  - test
 categories:
   - test
 math: true
