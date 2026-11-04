@@ -6,3 +6,8 @@ sidebar:
   post: Posts
   category: Categories
   tag: Tags
+
+categories: Categories
+tags: Tags
+tag: Tag
+recent_posts: Recent Posts

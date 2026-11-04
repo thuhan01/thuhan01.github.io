@@ -157,7 +157,6 @@ social:
 widgets:
   - category
   - tag
-  - tagcloud
   - recent_posts
 
 # Widget behavior

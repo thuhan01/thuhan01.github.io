@@ -1,0 +1,18 @@
+{{- with .Site.Data.sidebar_tags -}}
+  <div class="widget-wrapper">
+    <div class="widget-wrap" data-aos="{{ site.Params.animation.options.home.widget }}">
+      <div style="display: flex; justify-content: space-between;">
+        <h3 class="widget-title">{{ i18n "tags" }}</h3>
+      </div>
+      <div class="widget">
+        <ul class="tag-list" itemprop="keywords">
+          {{- range . -}}
+            <li class="tag-item">
+              <a class="tag-link" href="{{ .url | relURL }}" aria-label="{{ i18n "tag" }}: {{ .name }}" title="{{ .name }}">{{ .name }}</a>
+            </li>
+          {{- end -}}
+        </ul>
+      </div>
+    </div>
+  </div>
+{{- end -}}
