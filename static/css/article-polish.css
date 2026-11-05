@@ -1,0 +1,92 @@
+/* Article typography follows the theme colors in both light and dark mode. */
+.h-entry.article .article-inner {
+  border: 1px solid color-mix(in srgb, var(--red-1) 11%, transparent);
+  box-shadow: 0 18px 55px rgba(19, 14, 32, .08);
+}
+
+.h-entry.article .article-entry {
+  font-size: 16px;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.h-entry.article .article-entry p,
+.h-entry.article .article-entry li {
+  line-height: 1.85;
+}
+
+.h-entry.article .article-entry h2 {
+  margin: 2.4em 0 .9em;
+  padding-bottom: .42em;
+  border-bottom: 1px solid color-mix(in srgb, var(--red-1) 22%, transparent);
+}
+
+.h-entry.article .article-entry h3 {
+  margin-top: 1.9em;
+  color: var(--red-1);
+}
+
+.h-entry.article .article-entry :is(h2, h3, h4) + p {
+  margin-top: .65em;
+}
+
+.h-entry.article .article-entry blockquote:not(.alert-blockquote):not(.article-copyright) {
+  margin: 1.6em 0;
+  padding: .8em 1.2em;
+  border-left: 4px solid var(--red-1);
+  border-radius: 0 12px 12px 0;
+  background: color-mix(in srgb, var(--red-1) 7%, var(--color-wrap));
+}
+
+.h-entry.article .article-entry blockquote:not(.alert-blockquote) p {
+  margin: .4em 0;
+}
+
+.h-entry.article .article-entry > p > img,
+.h-entry.article .article-entry > figure img,
+.h-entry.article .article-entry > p > a > img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 680px;
+  margin: 1.6em auto;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 12px 34px rgba(15, 12, 25, .18);
+  opacity: 1;
+}
+
+.h-entry.article .article-entry div.highlight {
+  margin: 1.6em 0;
+  border: 1px solid color-mix(in srgb, var(--red-1) 14%, transparent);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.h-entry.article .article-entry div.highlight pre {
+  overflow-x: auto;
+  line-height: 1.65;
+}
+
+.h-entry.article .article-entry :not(pre) > code {
+  border: 1px solid color-mix(in srgb, var(--red-1) 13%, transparent);
+  padding: .12em .36em;
+}
+
+.h-entry.article .article-entry table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+.h-entry.article .article-entry :is(th, td) {
+  padding: .55em .8em;
+}
+
+@media (max-width: 700px) {
+  .h-entry.article .article-entry { font-size: 15px; }
+  .h-entry.article .article-entry h2 { margin-top: 1.8em; }
+  .h-entry.article .article-entry > p > img,
+  .h-entry.article .article-entry > figure img { max-height: 500px; }
+}
