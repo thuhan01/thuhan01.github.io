@@ -8,9 +8,14 @@
     data-aos="{{ .Site.Params.animation.options.article.whole }}"
   >
     <div class="article-meta">
-      {{- if .Params.tags -}}
+      {{- if or .Params.categories .Params.tags -}}
         <div class="article-tags-top" style="display: flow-root">
-          {{- partial "post/tag.html" . -}}
+          {{- with .Params.categories -}}
+            {{- partial "post/category.html" $ -}}
+          {{- end -}}
+          {{- with .Params.tags -}}
+            {{- partial "post/tag.html" $ -}}
+          {{- end -}}
         </div>
       {{- end -}}
       {{- partial "post/date.html" . -}}
@@ -144,7 +149,6 @@
           <em class="post-meta-item-text">{{ i18n "reading" }}</em>
         </span>
       {{- end -}}
-      {{- partial "post/category.html" . -}}
     </footer>
   </div>
   {{- if in .Site.Params.mainSections .Type -}}
