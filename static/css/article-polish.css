@@ -4,6 +4,14 @@
   text-decoration: none !important;
 }
 
+body :is(
+  p, span, h1, h2, h3, h4, h5, h6, li, td, th, blockquote, label, small,
+  strong, em, code, pre, time, figcaption, .article-entry, .post-info, .widget,
+  .main-nav-link, .sidebar-description, .sidebar-author-name, .article-meta
+) {
+  cursor: url("/images/karma-akabane-cursor-smile.png") 32 8, text !important;
+}
+
 a:hover {
   cursor: url("/images/karma-akabane-cursor-smile.png") 32 8, pointer !important;
 }
