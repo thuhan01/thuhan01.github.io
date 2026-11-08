@@ -9,7 +9,7 @@ categories:
 math: true
 mermaid: true
 photos:
-  - https://d-sketon.top/img/backwebp/bg1.webp
+  - https://i.pinimg.com/736x/72/df/4e/72df4e3422a48f16d772dc39a1780dd5.jpg
 ---
 
 ## Cyberphobia: Overflowed Bits
