@@ -9,7 +9,8 @@ categories:
 math: true
 mermaid: true
 photos:
-  - https://i.pinimg.com/736x/72/df/4e/72df4e3422a48f16d772dc39a1780dd5.jpg
+  - <img width="735" height="1308" alt="image" src="https://github.com/user-attachments/assets/acfd73bd-7645-4a89-9290-a607b38ee067" />
+
 ---
 
 ## Cyberphobia: Overflowed Bits
