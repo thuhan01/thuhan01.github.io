@@ -12,12 +12,14 @@ cover: ''
 math: true
 draft: false
 author: Hân
+writeup_subgroup: SpookyCTF 2026
 ---
-### Challenge Description
+# Cyberphobia: Overflowed Bits
+## Challenge Description
 I can’t trust computers anymore. I trusted the input, it overflowed.
 
 flag format is spooky{response_from_server}
-### Solution
+## Solution
 ```C++
 #include <stdio.h>
 #include <unistd.h>
