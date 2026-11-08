@@ -9,7 +9,7 @@ tags:
   - Easy
 cover: ''
 math: false
-draft: true
+draft: false
 author: Hân
 writeup_group: CTF
 writeup_subgroup: SpookyCTF 2026
