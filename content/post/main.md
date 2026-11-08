@@ -6,6 +6,7 @@ date: 2026-11-07T20:12:52+08:00
 lastmod: 2026-11-07T20:12:52+08:00
 categories:
   - test
+writeup_group: CTF
 math: true
 mermaid: true
 photos:

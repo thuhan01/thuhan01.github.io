@@ -1,0 +1,102 @@
+.writeup-tree,
+.writeup-tree .writeup-entries {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.writeup-tree-group {
+  margin: 0 0 0.3rem !important;
+  list-style: none !important;
+}
+
+.writeup-group > summary,
+.writeup-subgroup > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.42rem 0.5rem;
+  border-radius: 0.55rem;
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.writeup-group > summary::-webkit-details-marker,
+.writeup-subgroup > summary::-webkit-details-marker {
+  display: none;
+}
+
+.writeup-group > summary::before,
+.writeup-subgroup > summary::before {
+  content: "›";
+  color: var(--red-1);
+  font-size: 1.2em;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.writeup-group[open] > summary::before,
+.writeup-subgroup[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.writeup-group > summary:hover,
+.writeup-subgroup > summary:hover {
+  background: var(--red-5-5);
+  color: var(--red-1);
+}
+
+.writeup-group-name,
+.writeup-subgroup > summary > span:first-of-type {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.writeup-count {
+  margin-left: auto;
+  color: var(--grey-9);
+  font-size: 0.78em;
+}
+
+.writeup-subgroup {
+  margin: 0.1rem 0 0.1rem 0.7rem;
+  border-left: 1px solid var(--color-border);
+  padding-left: 0.35rem;
+}
+
+.writeup-tree .writeup-entries {
+  margin: 0.15rem 0 0.35rem 1.05rem !important;
+  border-left: 1px solid var(--color-border);
+  padding-left: 0.55rem !important;
+}
+
+.writeup-entries li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.22rem 0;
+  font-size: 0.88em;
+}
+
+.writeup-entries a {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.writeup-entries time {
+  flex: 0 0 auto;
+  color: var(--grey-9);
+  font-size: 0.78em;
+}
+
+.writeup-empty {
+  margin: 0.2rem 0 0.45rem 1.35rem;
+  color: var(--grey-9);
+  font-size: 0.85em;
+}

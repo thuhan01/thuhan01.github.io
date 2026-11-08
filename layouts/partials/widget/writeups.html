@@ -1,0 +1,81 @@
+{{- $site := .Site -}}
+{{- $allPosts := where $site.RegularPages "Section" "in" $site.Params.mainSections -}}
+{{- $groupNames := slice -}}
+{{- range $site.Data.writeup_groups -}}
+  {{- $groupNames = $groupNames | append .name -}}
+{{- end -}}
+{{- range $allPosts -}}
+  {{- $groupName := .Params.writeup_group | default "" -}}
+  {{- if and $groupName (not (in $groupNames $groupName)) -}}
+    {{- $groupNames = $groupNames | append $groupName -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="widget-wrapper">
+  <div class="widget-wrap" data-aos="{{ $site.Params.animation.options.home.widget }}">
+    <h3 class="widget-title">Write-ups</h3>
+    <div class="widget">
+      <ul class="writeup-tree">
+        {{- range $groupNames -}}
+          {{- $groupName := . -}}
+          {{- $groupPosts := slice -}}
+          {{- $subgroups := slice -}}
+          {{- $directPosts := slice -}}
+          {{- range $allPosts -}}
+            {{- if eq (lower (.Params.writeup_group | default "")) (lower $groupName) -}}
+              {{- $groupPosts = $groupPosts | append . -}}
+              {{- $subgroup := .Params.writeup_subgroup | default "" -}}
+              {{- if $subgroup -}}
+                {{- if not (in $subgroups $subgroup) -}}
+                  {{- $subgroups = $subgroups | append $subgroup -}}
+                {{- end -}}
+              {{- else -}}
+                {{- $directPosts = $directPosts | append . -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+          {{- $subgroups = sort $subgroups -}}
+          {{- $groupPosts = sort $groupPosts "Date" "desc" -}}
+          {{- $directPosts = sort $directPosts "Date" "desc" -}}
+          <li class="writeup-tree-group">
+            <details class="writeup-group" {{ if eq $groupName "CTF" }}open{{ end }}>
+              <summary>
+                <span class="writeup-group-name">{{ $groupName }}</span>
+                <span class="writeup-count">{{ len $groupPosts }}</span>
+              </summary>
+              {{- if not $groupPosts -}}
+                <p class="writeup-empty">Chưa có bài trong nhóm này.</p>
+              {{- else -}}
+                {{- range $subgroups -}}
+                  {{- $subgroupName := . -}}
+                  {{- $subgroupPosts := slice -}}
+                  {{- range $groupPosts -}}
+                    {{- if eq (.Params.writeup_subgroup | default "") $subgroupName -}}
+                      {{- $subgroupPosts = $subgroupPosts | append . -}}
+                    {{- end -}}
+                  {{- end -}}
+                  {{- $subgroupPosts = sort $subgroupPosts "Date" "desc" -}}
+                  <details class="writeup-subgroup">
+                    <summary><span>{{ $subgroupName }}</span><span class="writeup-count">{{ len $subgroupPosts }}</span></summary>
+                    <ul class="writeup-entries">
+                      {{- range $subgroupPosts -}}
+                        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></li>
+                      {{- end -}}
+                    </ul>
+                  </details>
+                {{- end -}}
+                {{- if $directPosts -}}
+                  <ul class="writeup-entries">
+                    {{- range $directPosts -}}
+                      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></li>
+                    {{- end -}}
+                  </ul>
+                {{- end -}}
+              {{- end -}}
+            </details>
+          </li>
+        {{- end -}}
+      </ul>
+    </div>
+  </div>
+</div>
