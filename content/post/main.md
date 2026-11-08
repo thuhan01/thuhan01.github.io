@@ -1,24 +1,22 @@
 ---
-title: Markdown Basic Elements
-description: 测试 Markdown 基本元素
+title: SpookyCTF 2026
+description: 
 
-date: 2022-06-09T20:12:52+08:00
-lastmod: 2022-06-09T20:12:52+08:00
+date: 2026-11-07T20:12:52+08:00
+lastmod: 2026-11-07T20:12:52+08:00
 categories:
   - test
 math: true
 mermaid: true
 photos:
   - https://d-sketon.top/img/backwebp/bg1.webp
-  - https://d-sketon.top/img/backwebp/bg2.webp
-  - https://d-sketon.top/img/backwebp/bg3.webp
 ---
 
-## Markdown 基本元素
+## Cyberphobia: Overflowed Bits
 
-### 标题
+### Task
 
-# H1
+### Solution
 
 ## H2
 
