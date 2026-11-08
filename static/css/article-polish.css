@@ -4,6 +4,10 @@
   text-decoration: none !important;
 }
 
+a:hover {
+  cursor: url("/images/karma-akabane-cursor-smile.png") 32 8, pointer !important;
+}
+
 #article-nav .article-nav-link-wrap {
   background: var(--color-wrap);
   color: var(--color-default);
