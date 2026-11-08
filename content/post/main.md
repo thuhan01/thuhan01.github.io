@@ -68,6 +68,8 @@ int main() {
     return 0;
 }
 ```
+Ta thấy `s` là một biến `struct` gồm `buf` và `direction`. `buf` lưu dữ liệu, còn `direction` lưu địa chỉ hàm sẽ được gọi.
+
 Ta thấy `s.direction = center_of_corn_maze;` gán địa chỉ của hàm `center_of_corn_maze` vào `s.direction`, đây là nơi chứa con trỏ của hàm (có kích thước 8 bytes).
 
 Vì biến `buf` chỉ chứa được `64 bytes` nhưng hàm `read` lại đọc `128 bytes`, nên ta có thể `buffer overflow` ở đây.
