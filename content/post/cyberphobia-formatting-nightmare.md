@@ -16,9 +16,7 @@ writeup_subgroup: SpookyCTF 2026
 ---
 # Cyberphobia: Formatting Nightmare
 ## Challenge description
-I trusted the string, it revealed my secrets.
-
-flag can only be fetched from the remote server, wrap answer in `spooky{}`
+> I trusted the string, it revealed my secrets. flag can only be fetched from the remote server, wrap answer in `spooky{}`
 ## Solution
 ```C++
 #include <stdio.h>
