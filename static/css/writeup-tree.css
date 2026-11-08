@@ -6,7 +6,7 @@
 }
 
 .writeup-tree-group {
-  margin: 0 0 0.3rem !important;
+  margin: 0 !important;
   list-style: none !important;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .writeup-subgroup {
-  margin: 0.1rem 0 0.1rem 0.7rem;
+  margin: 0 0 0 0.7rem;
   border-left: 1px solid var(--color-border);
   padding-left: 0.35rem;
 }
