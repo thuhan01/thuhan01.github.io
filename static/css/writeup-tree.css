@@ -5,6 +5,16 @@
   list-style: none !important;
 }
 
+.widget .writeup-tree li {
+  margin: 0 !important;
+}
+
+.widget .writeup-tree li::before {
+  content: none !important;
+  display: none !important;
+  margin: 0 !important;
+}
+
 .writeup-tree-group {
   margin: 0 !important;
   list-style: none !important;
