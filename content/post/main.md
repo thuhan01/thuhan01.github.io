@@ -16,8 +16,7 @@ writeup_subgroup: SpookyCTF 2026
 ---
 # Cyberphobia: Overflowed Bits
 ## Challenge Description
-I can’t trust computers anymore. I trusted the input, it overflowed.
-
+> I can’t trust computers anymore. I trusted the input, it overflowed.
 flag format is spooky{response_from_server}
 ## Solution
 ```C++
