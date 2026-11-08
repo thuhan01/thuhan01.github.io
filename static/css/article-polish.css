@@ -19,6 +19,15 @@
   text-shadow: none;
 }
 
+#article-nav .article-nav-title {
+  display: none !important;
+}
+
+#article-nav .article-nav-link-wrap {
+  height: 84px;
+  min-height: 84px;
+}
+
 .h-entry.article .article-inner {
   border: 1px solid color-mix(in srgb, var(--red-1) 11%, transparent);
   box-shadow: 0 18px 55px rgba(19, 14, 32, .08);
