@@ -9,8 +9,7 @@ categories:
 math: true
 mermaid: true
 photos:
-  - <img width="735" height="1308" alt="image" src="https://github.com/user-attachments/assets/acfd73bd-7645-4a89-9290-a607b38ee067" />
-
+  - /images/spookyctf-2026-landscape.jpg
 ---
 
 ## Cyberphobia: Overflowed Bits
