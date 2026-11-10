@@ -121,3 +121,12 @@
   color: var(--grey-9);
   font-size: 0.85em;
 }
+
+.spookyctf-page > h1 {
+  margin: 0 0 0.5em;
+  text-align: left;
+}
+
+.spookyctf-page > p {
+  margin: 0 0 1rem;
+}
