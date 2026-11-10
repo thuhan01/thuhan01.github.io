@@ -56,7 +56,14 @@
                   {{- end -}}
                   {{- $subgroupPosts = sort $subgroupPosts "Date" "desc" -}}
                   <details class="writeup-subgroup">
-                    <summary><span>{{ $subgroupName }}</span><span class="writeup-count">{{ len $subgroupPosts }}</span></summary>
+                    <summary>
+                      {{- if eq $subgroupName "SpookyCTF 2026" -}}
+                        <a class="writeup-subgroup-link" href="{{ "post/spookyctf-2026/" | relURL }}">{{ $subgroupName }}</a>
+                      {{- else -}}
+                        <span>{{ $subgroupName }}</span>
+                      {{- end -}}
+                      <span class="writeup-count">{{ len $subgroupPosts }}</span>
+                    </summary>
                     <ul class="writeup-entries">
                       {{- range $subgroupPosts -}}
                         <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></li>

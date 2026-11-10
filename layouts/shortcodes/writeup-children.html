@@ -1,0 +1,19 @@
+{{- $children := slice -}}
+{{- range .Site.RegularPages -}}
+  {{- if and (eq (.Params.writeup_group | default "") "CTF") (eq (.Params.writeup_subgroup | default "") "SpookyCTF 2026") -}}
+    {{- $children = $children | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $children = sort $children "Date" "desc" -}}
+
+<ul class="spookyctf-children">
+  {{- range $children -}}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        <span class="spookyctf-child-title">{{ .LinkTitle }}</span>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      </a>
+      {{- with .Description }}<p>{{ . }}</p>{{ end -}}
+    </li>
+  {{- end -}}
+</ul>
