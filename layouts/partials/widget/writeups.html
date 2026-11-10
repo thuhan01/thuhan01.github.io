@@ -5,11 +5,7 @@
   {{- $groupNames = $groupNames | append .name -}}
 {{- end -}}
 {{- range $allPosts -}}
-  {{- $sourceGroupName := .Params.writeup_group | default "" -}}
-  {{- $groupName := $sourceGroupName -}}
-  {{- if and (eq (lower $sourceGroupName) "ctf") .Params.writeup_subgroup -}}
-    {{- $groupName = .Params.writeup_subgroup -}}
-  {{- end -}}
+  {{- $groupName := .Params.writeup_group | default "" -}}
   {{- if and $groupName (not (in $groupNames $groupName)) -}}
     {{- $groupNames = $groupNames | append $groupName -}}
   {{- end -}}
@@ -26,18 +22,10 @@
           {{- $subgroups := slice -}}
           {{- $directPosts := slice -}}
           {{- range $allPosts -}}
-            {{- $sourceGroupName := .Params.writeup_group | default "" -}}
-            {{- $postGroupName := $sourceGroupName -}}
-            {{- $promotedEvent := and (eq (lower $sourceGroupName) "ctf") (ne (.Params.writeup_subgroup | default "") "") -}}
-            {{- if $promotedEvent -}}
-              {{- $postGroupName = .Params.writeup_subgroup -}}
-            {{- end -}}
-            {{- if eq (lower $postGroupName) (lower $groupName) -}}
+            {{- if eq (lower (.Params.writeup_group | default "")) (lower $groupName) -}}
               {{- $groupPosts = $groupPosts | append . -}}
               {{- $subgroup := .Params.writeup_subgroup | default "" -}}
-              {{- if $promotedEvent -}}
-                {{- $directPosts = $directPosts | append . -}}
-              {{- else if $subgroup -}}
+              {{- if $subgroup -}}
                 {{- if not (in $subgroups $subgroup) -}}
                   {{- $subgroups = $subgroups | append $subgroup -}}
                 {{- end -}}
