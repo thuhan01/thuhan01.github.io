@@ -10,6 +10,6 @@ draft: false
 
 # SpookyCTF 2026
 
-Chọn một bài write-up để đọc:
+Write-up của giải SpookyCTF
 
 {{< writeup-children >}}
