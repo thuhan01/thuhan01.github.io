@@ -5,15 +5,8 @@
   {{- end -}}
 {{- end -}}
 {{- $children = sort $children "Date" "desc" -}}
+{{- $ctx := .Page -}}
 
-<ul class="spookyctf-children">
-  {{- range $children -}}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        <span class="spookyctf-child-title">{{ .LinkTitle }}</span>
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-      </a>
-      {{- with .Description }}<p>{{ . }}</p>{{ end -}}
-    </li>
-  {{- end -}}
-</ul>
+{{- range $index, $child := $children -}}
+  {{- partial "post.html" (dict "index" $index "ctx" $ctx "page" $child) -}}
+{{- end -}}
