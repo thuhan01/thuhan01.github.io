@@ -4,6 +4,7 @@ description: "Các bài write-up của SpookyCTF 2026."
 date: 2026-11-10T00:00:00Z
 url: /post/spookyctf-2026/
 layout: spookyctf-2026
+cover: /images/karma-post-cover-left.svg
 draft: false
 ---
 

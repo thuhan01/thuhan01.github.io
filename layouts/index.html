@@ -1,0 +1,6 @@
+{{- define "main" -}}
+  {{- $parent := .Site.GetPage "/spookyctf-2026.md" -}}
+  {{- with $parent -}}
+    {{- partial "post.html" (dict "index" 0 "ctx" $ "page" .) -}}
+  {{- end -}}
+{{- end -}}
